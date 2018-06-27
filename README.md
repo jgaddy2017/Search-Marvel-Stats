@@ -2,7 +2,7 @@
 
 ## Live Link
 
-Here is a live link <https://jgaddy2017.github.io/Gaddy-Marvel-Heros/>
+Here is a live link <https://jgaddy2017.github.io/SearchMarvelStats/>
 
 ## Summary Section
 
