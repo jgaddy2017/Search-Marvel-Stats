@@ -9,27 +9,30 @@
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Raleway" rel="stylesheet">
         <link rel="stylesheet" href="./float-grid.css" />
         <link rel="stylesheet" type="text/css" href="./main.css" >
+        <link rel="stylesheet" type="text/css" href="./modal.css">
     </head>
     <body>
         <header role="banner">
-           <div class="row">
+           <!-- <div class="row">
                     <div class="col-3">
-                        <button class="myButtons" id="homeButton">Home</button>
+                        <button id="myBtn">Characters</button>
                     </div>
-                    <div class="col-6">
+                    <div class="col-6">-->
                         <h1>Marvel API</h1>
-                    </div>
-            </div>
+                    <!--</div>
+            </div>-->
         </header>
 
         <div class="row">
-            <div class="col-6">
+            <div class="col-3">
                 <input type="text" id="inputCharacter"/>
             </div>
             <div class="col-3 buttonDivider">
                 <button id="searchButton" class="myButtons">Search</button>
             </div>
-            
+            <div class="col-6">
+                <button id="myBtn" class="myButtons">Characters</button>
+            </div>
         </div>
 
         <!--did not hide this because I am using this at the start of my application-->
@@ -39,10 +42,22 @@
 
 
 
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="results" aria-live="assertive">
+                </div>
+            </div>
+        </div>
+
+
         <script
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous"></script>
+        <script src="./characterObject.js"></script>
         <!--md5 encryption came from google-->
         <script src="./md5.js"></script>
         <script type="text/javascript" src="./index.js"></script>

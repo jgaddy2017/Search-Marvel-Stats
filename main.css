@@ -21,6 +21,9 @@ h4{
 
 
 
+fieldset {
+    border: 0;
+}
 
 input[type=text] {
     width: 100%;
@@ -28,7 +31,6 @@ input[type=text] {
     margin: 8px 0;
     border-radius: 5px;
     border: 3px solid gold;
-    font-size: 22px;
 }
 .myButtons{
     width: 100%;
@@ -38,8 +40,20 @@ input[type=text] {
     border: 3px solid gold;
     font-size: 22px;
 }
-
-
+.buttonDivider{ 
+    border-right: solid 5px gold
+}
+.card{
+    background-color:black;
+    border: 3px solid black;
+    color: white;
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+}
 .icon{
     border-radius: 5px;
 }
@@ -55,8 +69,58 @@ p{
     text-align: center;
     /*vertical-align: text-bottom;*/
 }
+.card:hover{
+    border-radius: 5px;
+    border: 3px solid white;
+    color: gold;
+}
+.characterIndexTable{
+    text-align: center;
+    background-color: black;
+}
 
+.characterIndex{
+    display: inline-block;
+    border: 2px solid gold;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 5px;
+    vertical-align: middle;
+    margin: 5px;
+    padding-right:5px;
+    padding-left:5px;
+}
+.characterIndexDisabled{
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    line-height: 5px;
+    vertical-align: middle;
+    margin: 5px;
+    padding-right:5px;
+    padding-left:5px;
+    background-color: red;
+    color: white;
 
+}
+
+.characterIndex:hover{
+    background-color:gold;
+    color:black;
+}
+/*
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
+*/
 .displayCharacterName{
     font-size: 28px;
 }
